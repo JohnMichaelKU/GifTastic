@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GifTastic!</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="bulma.css">
+</head>
+<body>
+  <section class="hero is-info">
+  	<div class="hero-body">
+    	<div class="container">
+    		<div class="columns is-mobile">
+				<div class="column has-text-centered">
+      				<h1 class="title">
+        				GifTastic
+      				</h1>
+      				<h2 class="subtitle">
+        				Holds all your GIFs
+      				</h2>
+    			</div>
+  			</div>
+  		</div>
+  	</div>
+</section>
+<div class="container">
+  <br>
+  <div id="gif-buttons">
+  </div>
+  <br>
+  <div class="columns">
+    <div id="gif-location" class="column is-9" style="display:inline-block;">
+    </div>
+    <div class="column">
+      <div class="field">
+        <label class="label">Add a new animal</label>
+        <div class="control">
+          <input id="animal-input" class="input" type="text" placeholder="Chimpanzee">
+        </div>
+        <br>
+        <div class="field">
+          <div class="control">
+            <button id="add-button" class="button is-info">Add animal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="javascript.js"></script>
