@@ -12,11 +12,12 @@ $(document).ready(function() {
     pickedAnimal = $(this).val();
     console.log(pickedAnimal);
     $.ajax({
-      url: "http://api.giphy.com/v1/gifs/search?q=" + pickedAnimal + "&api_key=e09c00c1c4cc417797de0a10c2511739&limit=5",
+      url: "https://api.giphy.com/v1/gifs/search?q=" + pickedAnimal + "&api_key=e09c00c1c4cc417797de0a10c2511739&limit=10",
       method: "GET"
     }).done(function(data) {
       console.log(data);
-      for(i = 0; i< 5; i++) {
+			$("#gif-location").empty();
+      for(i = 0; i< 10; i++) {
         image = $("<div style='display:inline-block;' class='has-text-centered' <p>" + data.data[i].rating + "</p><img src='" + data.data[i].images.fixed_height.url + "'></div>");
         $("#gif-location").prepend(image)
         console.log(data.data[i].rating)
